@@ -1,0 +1,22 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>
+        G-Email Sender
+    </title>
+</head>
+<body>
+    <form th:action="@{/sendmail}" method="post">
+
+        <label for="to">TO:</label>
+        <input type="text" name="to">
+
+        <label for="subject">Subject:</label>
+        <input type="text" name="subject">
+
+        <label for="message">Message:</label>
+        <textarea name="message"></textarea>
+
+        <button type="submit">Send Mail</button>
+    </form>
+</body>
+</html>
